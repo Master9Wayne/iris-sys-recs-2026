@@ -28,3 +28,7 @@
 * Added dependency as mysql to ensure application starts only after database service.
 * Added ```RAILS_SERVE_STATIC_FILES: "true"```. Was getting error before because CSS/ JS assets were not loading in the container.
 * Then passed the database credentials.
+
+![Screenshot](/public/sc1.png)
+
+This is the website I could access after finishing the task.
