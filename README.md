@@ -9,6 +9,7 @@
 * Made it depend on web so that it loads only after the wes server.
 
 ### The Nginx Config File
+* Present in config sudirectory.
 * Defined a group of servers named ```rails_cluster``` which point to the container web on port 3000.
 * Defined the server block to listen on port 8.
 * Added ```proxy_pass``` which takes incoming requests and forwards it to the rails cluster.
