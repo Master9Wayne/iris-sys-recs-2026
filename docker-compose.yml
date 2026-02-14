@@ -7,8 +7,6 @@ services:
       MYSQL_USER: app_user
       MYSQL_PASSWORD: app_pass
       MYSQL_ROOT_PASSWORD: root_secure_password
-    volumes:
-      - mysql_data:/var/lib/mysql
 
   web:
     build: .
@@ -23,6 +21,3 @@ services:
       DB_USER: app_user
       DB_PASSWORD: app_pass
       SECRET_KEY_BASE: "..."
-
-volumes:
-  mysql_data:
