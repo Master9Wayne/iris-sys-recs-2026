@@ -7,6 +7,6 @@
 ### Updating default.conf
 * Kept only 1 web service in my rails-cluster.
 
-#### Brought up everything using command ```docker compose up -d --scale web=3```. This creates 3 containers of the web service without having to explicitly define them inside our compose file. This bringus up all the 3 containers with a single command.
+#### Brought up everything using command ```docker compose up -d --scale web=3```. This creates 3 containers of the web service without having to explicitly define them inside our compose file. This brings up all the 3 containers with a single command.
 
 ![scre4](/public/sc4.png)
