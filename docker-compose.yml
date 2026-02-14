@@ -18,7 +18,7 @@ services:
       DB_HOST: mysql
       DB_USER: app_user
       DB_PASSWORD: app_pass
-      SECRET_KEY_BASE: "dummy_secret_key"
+      SECRET_KEY_BASE: "..."
 
   nginx:
     image: nginx:latest
