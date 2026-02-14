@@ -17,6 +17,8 @@
 
 ### Compose file for Connecting Rails App and Database
 
+Present in main directory.
+
 #### MySQL Service
 * Used the ```mysql: 8.0``` image.
 * Configures environment variables to initialize database.
