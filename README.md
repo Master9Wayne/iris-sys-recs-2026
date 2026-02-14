@@ -9,4 +9,8 @@
 ### Updating the default.conf
 * Now in the rails cluster instead of having 1 web service, 3 have been defined.
 * Now nginx will default to round robin for scheduling the load to each of these services, essentially acting as a load balancer.
+  
 
+In the given screenshot it is visible that all 3 containers of the web service, mysql and nginx are up and running.
+
+![scre3](/public/sc3.png)
