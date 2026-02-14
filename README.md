@@ -13,5 +13,11 @@
 * Defined the server block to listen on port 8.
 * Added ```proxy_pass``` which takes incoming requests and forwards it to the rails cluster.
 * Added the ```proxy_set_header``` directives to tell the ruby app requests are coming from the IP of the real user and not nginx's internal IP.
-  
 
+  Then ran the compose file using docker-compose up -d --build.
+  
+  ![Scre1](public/sc2.png)
+
+  And accessed the website
+
+  ![Scre1](public/sc1.png)
