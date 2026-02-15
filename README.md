@@ -1,9 +1,11 @@
 # iris-sys-recs-2026
 ## About Me 😊
 
+<br>
 Hi, I'm Aradhya.<br>
-I am from B-Tech CSE 2nd Year.<br>
-I like problem solving and am very passionate about systems, particularly the domain of networking. I like understanding how the technology we use every day actually works behind the scenes rather than just using it. I want to join IRIS Systems because I feel it is a good platform for understanding the internal architecture of real-world deployed websites and getting invaluable experience. Also I have heard the people in IRIS Systems are really nice and fun 😉.
+I am from B-Tech CSE 2nd Year.<br><br>
+I like problem solving and am very passionate about systems, particularly the domain of networking. I like understanding how the technology we use every day actually works behind the scenes rather than just using it. I want to join IRIS Systems because I feel it is a good platform for understanding the internal architecture of real-world deployed websites and getting invaluable experience. <br><br>
+Also I have heard the people in IRIS Systems are really nice and fun 😉.<br><br>
 
 ### Task Submissions:
 
