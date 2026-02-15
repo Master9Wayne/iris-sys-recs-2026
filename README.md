@@ -1,10 +1,11 @@
 # iris-sys-recs-2026
-## Why do I want to join IRIS Systems?
+## About Me 😊
 
-I have a deep interest in the domain of computer systems and want to understand internally how the internet and websites work. I think IRIS Systems is a good platform for learning the internal architecture and the BTS of how real-world deployed websites work. I will be able to learn a lot and also I have heard the people in IRIS Systems are really nice and fun.
+Hi, I'm Aradhya.<br>
+I am from B-Tech CSE 2nd Year.<br>
+I like problem solving and am very passionate about systems, particularly the domain of networking. I like understanding how the technology we use every day actually works behind the scenes rather than just using it. I want to join IRIS Systems because I feel it is a good platform for understanding the internal architecture of real-world deployed websites and getting invaluable experience. Also I have heard the people in IRIS Systems are really nice and fun 😉.
 
-
-### Task Submissions
+### Task Submissions:
 
 | Task Number | Link to Branch |
 |------------|-----|
