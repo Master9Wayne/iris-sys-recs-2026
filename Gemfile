@@ -51,3 +51,7 @@ end
 
 gem 'devise', '~> 4.9'
 gem 'bootstrap', '~> 5.3'
+
+gem 'yabeda-rails'
+gem 'yabeda-prometheus'
+
