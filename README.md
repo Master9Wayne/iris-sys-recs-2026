@@ -12,6 +12,14 @@
 * Rails has a security feature in development mode that allows only app access if it is on localhost.
 * To use prometheus we have to bypass that, hence added the line ```config.hosts.clear``` which prevents rails from blocking the request.
 
+### Modifying docker-compose.yml
+* Added the service for prometheus.
+* Built it on the image ```prom/prometheus:latest```
+* Exposed it on port 9090.
+* Added volume for persistence.
+* Used ```'--config.file=/etc/prometheus/prometheus.yml'``` as command, to tell prometheus where to look for it's configuration.
+* Added dependency as web so that prometheus would only run after rails app is launched.
+
 ### Adding the prometheus-config.yml
 #### Located in config subdirectory
 * Gave the target as ```web:3000```, web being the rail app's name and the port 3000 where it is exposed.
