@@ -17,4 +17,21 @@
 * Gave the target as ```web:3000```, web being the rail app's name and the port 3000 where it is exposed.
 * Set scrape interval as 4s.
 
+### Further Steps
+
+* Ran the compose file and then pulled the image for grafana and ran it using command ```docker run -d -p 3000:3000 --name=grafana grafana/grafana-oss```.
+  ![screen8](/public/sc8.png)
+
+* The prometheus website I could access on port 9090.
+  ![screen5](/public/sc5.png)
+  
+* Entered the grafana website on port 3000 using username and password as admin.
+* Used standard Yabeda Rails desktop interface for visualising the metrics.
+* Refreshed the IRIS Share page for the requests.
+
+  ![screen6](/public/sc6.png)
+
+#### This was the final Grafana metrics page I got.
+
+
 
