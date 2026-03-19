@@ -9,38 +9,66 @@ services:
       MYSQL_ROOT_PASSWORD: root_secure_password
     volumes:
       - db_data:/var/lib/mysql
+    networks:
+      - application # Backend service 
 
   web:
     build: .
     depends_on:
       - mysql
+    deploy:
+      replicas: 3 
     environment:
       RAILS_ENV: development
       DB_HOST: mysql
       DB_USER: app_user
       DB_PASSWORD: app_pass
       SECRET_KEY_BASE: "1"
+    networks:
+      - application 
+      - storage     
 
   nginx:
     image: nginx:latest
     ports:
-      - "80:80"
+      - "80:80" 
+      - "443:443"
     volumes:
       - ./config/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./config/.htpasswd:/etc/nginx/.htpasswd:ro
     depends_on:
       - web
+    networks:
+      - public      
+      - application  
+      - monitoring  
 
   prometheus: 
     image: prom/prometheus:latest
     container_name: prometheus
-    ports:
-      - "9090:9090"
+   
     volumes:
       - ./config/prometheus-config.yml:/etc/prometheus/prometheus.yml
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     depends_on:
       - web
+    networks:
+      - monitoring
+      - application 
+
+networks:
+  public:
+    driver: bridge
+  application:
+    driver: bridge
+    internal: true 
+  storage:
+    driver: bridge
+    internal: true
+  monitoring:
+    driver: bridge
+    internal: true
 
 volumes:
   db_data:
