@@ -1,5 +1,5 @@
 # iris-sys-recs-2026
-## Round 2- Task 2 (Shared Storage via NFS)
+## Round 2-Task 2 (Shared Storage via NFS)
 
 ### The NFS Server
 * Used an Alpine Based NFS-Server image for container to be lightweight and fast. It runs on the isolated storage network.
