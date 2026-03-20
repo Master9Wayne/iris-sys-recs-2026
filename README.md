@@ -7,7 +7,7 @@ I am from B-Tech CSE 2nd Year.<br><br>
 I like problem solving and am very passionate about systems, particularly the domain of networking. I like understanding how the technology we use every day actually works behind the scenes rather than just using it. I want to join IRIS Systems because I feel it is a good platform for understanding the internal architecture of real-world deployed websites and getting invaluable experience. <br><br>
 Also I have heard the people in IRIS Systems are really nice and fun 😉.<br><br>
 
-### Task Submissions:
+### Task Submissions for Round-1:
 
 | Task Number | Link to Branch |
 |------------|-----|
@@ -20,7 +20,14 @@ Also I have heard the people in IRIS Systems are really nice and fun 😉.<br><b
 | Task-7 | [Open](https://github.com/Master9Wayne/iris-sys-recs-2026/tree/T7) |
 | Task-8 | [Open](https://github.com/Master9Wayne/iris-sys-recs-2026/tree/T8) |
 
+### Task Submissions for Round-2:
 
+| Task Number | Link to Branch |
+|------------|-----|
+| Task-1 | [Open](https://github.com/Master9Wayne/iris-sys-recs-2026/tree/R2-T1) |
+| Task-2 | [Open](https://github.com/Master9Wayne/iris-sys-recs-2026/tree/R2-T2) |
+| Task-3 | [Open](https://github.com/Master9Wayne/iris-sys-recs-2026/tree/R2-T3) |
+| Task-4 | [Open](https://github.com/Master9Wayne/iris-sys-recs-2026/tree/R2-T4) |
 
 
 
