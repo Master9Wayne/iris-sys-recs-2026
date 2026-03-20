@@ -10,7 +10,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     networks:
-      - application # Backend service 
+      - application 
 
   web:
     build: .
@@ -25,8 +25,21 @@ services:
       DB_PASSWORD: app_pass
       SECRET_KEY_BASE: "1"
     networks:
-      - application 
-      - storage     
+      - application
+      - storage 
+    volumes:
+      - nfs_share:/app/public/uploads 
+
+  nfs_server: 
+    image: itsthenetwork/nfs-server-alpine:latest
+    container_name: nfs_server
+    environment:
+      SHARED_DIRECTORY: /nfsshare
+    volumes:
+      - nfs_data:/nfsshare
+    networks:
+      - storage
+    privileged: true 
 
   nginx:
     image: nginx:latest
@@ -40,13 +53,13 @@ services:
       - web
     networks:
       - public      
-      - application  
-      - monitoring  
+      - application 
+      - monitoring 
 
   prometheus: 
     image: prom/prometheus:latest
     container_name: prometheus
-   
+
     volumes:
       - ./config/prometheus-config.yml:/etc/prometheus/prometheus.yml
     command:
@@ -55,7 +68,7 @@ services:
       - web
     networks:
       - monitoring
-      - application 
+      - application
 
 networks:
   public:
@@ -72,3 +85,10 @@ networks:
 
 volumes:
   db_data:
+  nfs_data: 
+  nfs_share: 
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=nfs_server,rw,nolock,hard,nointr,nfsvers=4
+      device: ":/nfsshare"
