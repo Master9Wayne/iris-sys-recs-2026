@@ -4,6 +4,7 @@
 ### Initial Setup:
 * Nginx exposed to only ports 80 and 443 as specified.
 * Principle of Least Privilege: Principle by which only minimum permissions necessary to perform a task are provided. Created 4 networks Public, Application, Storage and Monitoring. All these networks were bridge networks with ```internal: true``` to provide maximum isolation so that containers over the same network can communicate, but cannot access external networks. Thie network definition was added in docker-compose file.
+*  ![screen8](/public/sc12.png)
 * Multi Network Attachment: Attached NGINX to both public and application networks to receive external traffic on the public network and forward it on the application network.
 
 ### Task Demands:
