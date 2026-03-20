@@ -17,7 +17,7 @@
 ![screen8](/public/sc18.png)
 Prometheus is scraping data from all the containers properly.
 
-![screen8](/public/sc19.png)
+![screen8](/public/sc17.png)
 Grafana dashboard for CPU and Memory Usage.
   
   
