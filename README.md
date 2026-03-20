@@ -11,6 +11,13 @@
 * Graceful Reloads: Used NGINX's native signal handling via docker exec command.
 * Rate Limiting: Put ```limit_red_zone=7``` which only allows 7 requests/second with a burst of 15. Configured it to return 429 if limit is exceeded.
 * Protecting grafana.localhost: Used .htpasswd to secure grafana.localhost via HTTP Basic AUTH to protect the internal services being used.
+ ![screen8](/public/sc9.png)
 
+### Testing:
+* Used ```curl -H "Host: app.localhost" http://localhost``` to test subdomain routing and load balancing. The HTTP 200 OK response shows that eveyrthing is working.
+![screen8](/public/sc10.png)
+
+* Used ```for i in {1..100}; do curl -s -o /dev/null -w "%{http_code}\n" -H "Host: app.localhost" http://localhost; done``` to test limiting rate. After a few requests we start getting 429 which means limit has exceeded.
+![screen8](/public/sc11.png)
   
   
