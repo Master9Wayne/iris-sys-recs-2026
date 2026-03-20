@@ -38,8 +38,9 @@ services:
     volumes:
       - nfs_data:/nfsshare
     networks:
-      - storage
-    privileged: true 
+      storage:
+        ipv4_address: 10.5.0.5
+    privileged: true
 
   nginx:
     image: nginx:latest
@@ -90,5 +91,6 @@ volumes:
     driver: local
     driver_opts:
       type: nfs
-      o: addr=nfs_server,rw,nolock,hard,nointr,nfsvers=4
-      device: ":/nfsshare"
+      o: addr=10.5.0.5,rw,nolock,hard,nointr,nfsvers=4
+      device: ":/" 
+  grafana_data:
