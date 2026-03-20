@@ -12,6 +12,24 @@ services:
     networks:
       - application 
 
+  backup:
+    image: alpine:latest
+    container_name: backup_service
+    depends_on:
+      - mysql
+    networks:
+      - application
+    volumes:
+      - ./backup.sh:/backup.sh:ro       
+      - ./backups:/backups           
+      - nfs_share:/nfsshare:ro        
+    command: >
+      /bin/sh -c "
+        apk add --no-cache mysql-client tar &&
+        chmod +x /backup.sh &&
+        /backup.sh
+      "
+
   web:
     build: .
     depends_on:
