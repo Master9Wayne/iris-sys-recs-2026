@@ -1,5 +1,5 @@
 # iris-sys-recs-2026
-## Round 2- Task 1 ( Reverse Proxy, Load Balancing and Access Control)
+## Round 2-Task 1 ( Reverse Proxy, Load Balancing and Access Control)
 
 ### Initial Setup:
 * Nginx exposed to only ports 80 and 443 as specified.
