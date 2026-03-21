@@ -12,7 +12,7 @@
 
 ### Editing the prometheus config file:
 * Added jobs for scraping data from cadvisor, node-exporter, rails-app and nginx-exporter.
-* Dynamic scarping cause there are 3 replicas of the web service. Added ```dns_sd_configs``` pointing to the web service name. Prometheus automatically finds all the 3 replicas.
+* Dynamic scraping cause there are 3 replicas of the web service. Added ```dns_sd_configs``` pointing to the web service name. Prometheus automatically finds all the 3 replicas.
 
 ![screen8](/public/sc18.png)
 Prometheus is scraping data from all the containers properly.
