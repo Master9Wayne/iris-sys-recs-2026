@@ -2,7 +2,7 @@
 ## Round 2-Task 3 (Monitoring Stack)
 
 ### Editing the docker-compose file:
-* Added 3 services for cadvisor, node-exporter and nginx-exporter. cadvisor scrapes data from all the containers automatically. Exposaed it on the monitoring network without exposing any ports. Node-exporter pulls hardware and os-level metrics. Nginx-exporter converts nginx stats to make it prometheus scrapable.
+* Added 3 services for cadvisor, node-exporter and nginx-exporter. cadvisor scrapes data from all the containers automatically. Exposed it on the monitoring network without exposing any ports. Node-exporter pulls hardware and os-level metrics. Nginx-exporter converts nginx stats to make it prometheus scrapable.
 * Ensured no ports were exposed anywhere.
 
 ### Editing the nginx config file:
